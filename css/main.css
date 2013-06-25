@@ -1,0 +1,640 @@
+html,
+body {
+   margin:0;
+   padding:0;
+   height:100%;
+   font: 13px Helvetica, Arial, 'Liberation Sans', FreeSans, sans-serif;
+
+}
+#container {
+   min-height:100%;
+   position:relative;
+}
+#header {
+   background:#fff;
+}
+#body {
+   padding:10px;
+   padding-bottom:60px;   /* Height of the footer */
+}
+#footer {
+   position:absolute; clear:both;
+   bottom:0;
+   width:100%;
+   height:30px;   /* Height of the footer */
+   background:#3F3737;
+   color:#fff;
+   font-size: 10px;
+}
+
+.logo{
+  margin-right: 50px;
+}
+
+html body * span.clear,
+html body * div.clear,
+html body * li.clear,
+html body * dd.clear
+{
+  background: none;
+  border: 0;
+  clear: both;
+  display: block;
+  float: none;
+  font-size: 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 5px;
+}
+
+
+
+
+
+
+/* Grid 
+Layout 
+Starts 
+here
+
+*/
+.container_12
+{ 
+   margin-left: 10%;
+   margin-right: 10%;
+}
+
+/* =Grid >> Global
+--------------------------------------------------------------------------------*/
+
+.grid_1,
+.grid_2,
+.grid_3,
+.grid_4,
+.grid_5,
+.grid_6,
+.grid_7,
+.grid_8,
+.grid_9,
+.grid_10,
+.grid_11,
+.grid_12,
+.grid_13,
+.grid_14,
+.grid_15,
+.grid_16
+{
+  display: inline;
+  float: left;
+  margin-left: 1%;
+  margin-right: 1%;
+  margin-bottom: 1%;
+}
+
+.container_12 .grid_3,
+.container_16 .grid_4
+{ 
+  width: 23%;
+}
+
+#context .container_12
+{
+   margin-left: 9.3%;
+   margin-right: 9.3%;
+}
+
+#context2 .container_12
+{
+  margin-left: 9.3%;
+  margin-right: 9.3%;
+}
+
+
+.container_12 .grid_4
+{ 
+  width: 31%;
+  margin-bottom: 0px;
+}
+
+
+
+
+.container_12 .grid_6,
+.container_16 .grid_8
+{
+  width: 48%;
+}
+
+.container_12 .grid_9,
+.container_16 .grid_12
+{
+  width: 73%;
+}
+
+.container_12 .grid_12,
+.container_16 .grid_16
+{
+  width: 98%;
+}
+
+/* boxes
+----------------------------------------------- */
+.box {
+  background:#ddd;
+  margin-bottom:20px;
+  padding:10px 10px 1px 10px;
+}
+.box h2 {
+  font-size:1em;
+  font-weight:normal;
+  text-transform:uppercase;
+  color:#fff;
+  background:#333;
+  margin:-10px -10px 0 -10px;
+  padding:6px 12px;
+
+}
+.box h2 a,
+.box h2 a.visible {
+  color:#fff;
+  background:#333 url("../img/switch_minus.gif") 97% 50% no-repeat;
+  display:block;
+  padding:6px 12px;
+  margin:-6px -12px;
+  border:none;
+
+}
+
+.article a.image {
+  float:left; 
+  margin:3px 10px 3px 0; 
+  padding:4px;
+  border:1px solid #bbb;
+  background:#fff;
+}
+.article a.image:hover {
+  border:1px solid #666;
+}
+.article a.image img {
+  float:left; 
+}
+.article p.meta {
+  color:#666;
+  border-top:1px dotted #999;
+  border-bottom:1px dotted #999;
+  padding:.3em 0;
+  margin-bottom:.8em;
+}
+
+
+/*
+  Text CSS.
+*/
+
+/* =Basic HTML
+--------------------------------------------------------------------------------*/
+
+body
+{
+   font: 13px/1.5 Helvetica, Arial, 'Liberation Sans', FreeSans, sans-serif;
+}
+
+a:focus
+{
+   outline: 1px dotted invert;
+}
+
+hr
+{
+   border-color: #ccc;
+   border-style: solid;
+   border-width: 1px 0 0;
+   clear: both;
+   height: 0;
+}
+
+/* =Headings
+--------------------------------------------------------------------------------*/
+
+h1
+{
+   font-size: 25px;
+}
+
+h2
+{
+   font-size: 23px;
+}
+
+h3
+{
+   font-size: 21px;
+}
+
+h4
+{
+   font-size: 19px;
+}
+
+h5
+{
+   font-size: 17px;
+}
+
+h6
+{
+   font-size: 15px;
+}
+
+/* =Spacing
+--------------------------------------------------------------------------------*/
+
+ol
+{
+   list-style: decimal;
+}
+
+ul
+{
+   list-style: square;
+}
+
+li
+{
+   margin-left: 30px;
+}
+
+p,
+dl,
+hr,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ol,
+ul,
+pre,
+table,
+address,
+fieldset
+{
+   margin-bottom: 20px;
+}
+
+
+
+
+/*
+-----------------------------------------------
+Navigation
+----------------------------------------------- */
+
+/* navigation (horizontal subnavigation)
+----------------------------------------------- */
+
+ul.nav li.current{
+  color:#fff;
+  background:#555;
+}
+
+
+ul.nav,
+ul.nav * { margin:0;padding:0;}
+ul.nav {
+  position:relative;
+ 
+  max-width:90%;
+  height:2.5em;
+  z-index: 100;
+
+  }
+ul.nav li {
+   cursor:pointer;
+   float:left;
+   text-align:center;
+   list-style-type:none;
+   font-weight:normal;
+}
+
+ul.nav li ul {
+   cursor:default;
+   width:90%;
+   max-width:100%;
+   position:absolute;
+   height:auto;
+   top:2.5em;
+   background-position:0 0 !important;
+   left:-9000px;
+}
+ul.nav li ul li {
+   padding:0;
+   border:none;
+   width:auto;
+   max-width:none;
+}
+ul.nav li a {
+   color:#666;
+   font-weight:bold;
+   text-decoration:none;
+   display:block;
+   float:left;
+   padding:0 1em;
+   height:2.4em;
+   line-height:2.5em;
+}
+ul.nav li ul li a {
+   position:relative !important; /* ie Mac */
+   cursor:pointer !important;
+   white-space:nowrap;
+   line-height:2em;
+   height:2em;
+   font-weight:normal;
+   color:#666;
+   background-position:0 50% !important;
+}
+
+ul.nav li:hover a,
+ul.nav li a:hover,
+ul.nav li a:focus {color:#000; background:#ccc;}
+ul.nav li a:active {color:#666; background:#fff;}
+
+
+ul.nav li:hover ul {left:0;z-index:10}
+ul.nav li ul,
+ul.nav li {background:#ccc !important}
+ul.nav li:hover ul li a {color:#444;}
+ul.nav li:hover ul li a:hover {color:#000; background:#fff;}
+ul.nav li:hover ul li a:active {color:#666; background:#fff;}
+
+ul.nav li.current a {color:#666; background:#fff; cursor:default; font-weight:bold;}
+ul.nav li.current ul {left:0;z-index:5}
+ul.nav li.current ul,
+ul.nav li.current {background:#ccc !important}
+ul.nav li.current ul li a {color:#444; background:#ccc; font-weight:normal;}
+ul.nav li.current ul li a:hover {color:#000; background:#fff;}
+ul.nav li ul li.current a,
+ul.nav li ul li.current a:hover,
+ul.nav li.current:hover ul li a:active {color:#666; background:#fff;}
+
+
+/* navigation (vertical subnavigation)
+----------------------------------------------- */
+ul.nav {
+  background:#fff;
+  font-size: 12px;
+}
+
+ul.main li ul {
+  border-top:0;
+}
+ul.main li ul li {
+  float:left;
+}
+ul.main li a {
+   height:2.5em;
+   line-height:2.5em;
+   border:0;
+   color:#666;
+   background:#fff;
+}
+ul.main li ul li a {
+  width:12em;
+  line-height:2em;
+  height:2em;
+  text-align:left;
+  color:#fff;
+  border-top:1px solid #444;
+  background:#444;
+
+}
+ul.main li a:focus {color:#fff; background:#666;}
+ul.main li ul li a:hover {
+  color:#fff;
+  background:#555;
+}
+
+
+ul.main li:hover a {
+  color:#fff;
+  background:#555;
+}
+ul.main li:hover ul li a {color:#fff;}
+ul.main li:hover ul li a:hover {color:#fff; background:#444;}
+ul.main li:hover a:active {background:#444;}
+ul.main li:hover ul li a:active {color:#fff; background:#222;}
+
+
+/* secondary list
+----------------------------------------------- */
+ul.nav li.secondary {
+   float:right;
+   color:#cde;
+   background:transparent !important;
+}
+ul.nav li.secondary span.status {
+   float:left;
+   padding:0 1em;
+   line-height:2.77em;
+   height:2.77em;
+  font-size:0.9em;
+}
+ul.nav li.secondary span.status a {
+   float:none;
+   display:inline;
+   padding:0;
+   height:auto;
+   line-height:auto;
+   color:#cde;
+   background:transparent;
+}
+ul.nav li.secondary span.status a:hover {
+   color:#fff;
+   background:transparent;
+}
+ul.nav li.secondary span.status span {
+   text-transform:capitalize;
+}
+ul.nav li.secondary:hover a {
+   color:#fff;
+   background:#666;
+}
+ul.nav li.secondary:hover a:hover {
+   background:#555;
+}
+ul.nav li.secondary:hover a:active {background:#444;}
+
+
+
+.active2{
+   
+  color:#666; background:#555;
+
+}
+
+
+/*
+Tab CSS
+Starts 
+Here
+*/
+
+#tabs_wrapper {
+    width: 100%;
+}
+#tabs_container {
+    border-bottom: 1px solid #ccc;
+}
+#tabs {
+    list-style: none;
+    padding: 5px 0 2px 0;
+    margin: 0 0 0 10px;
+    /*font: 0.75em arial;*/
+}
+#tabs li {
+    display: inline;
+    margin-left: 4px;
+}
+#tabs li a {
+    border: 1px solid #ccc;
+    padding: 4px 6px;
+    text-decoration: none;
+    background-color: #ccc;
+    color:#fff;
+    border-bottom: none;
+    outline: none;
+    border-radius: 5px 5px 0 0;
+    -moz-border-radius: 5px 5px 0 0;
+    -webkit-border-top-left-radius: 5px;
+    -webkit-border-top-right-radius: 5px;
+}
+#tabs li a:hover {
+    background-color: #dddddd;
+    padding: 4px 6px;
+}
+#tabs li.active a {
+    border-bottom: 1px solid #fff;
+    color:#000;
+    background-color: #fff;
+    padding: 4px 6px 5px 6px;
+    border-bottom: none;
+}
+#tabs li.active a:hover {
+    background-color: #eeeeee;
+    padding: 4px 6px 5px 6px;
+    border-bottom: none;
+}
+  
+ 
+#tabs_content_container {
+    border: 1px solid #ccc;
+    border-top: none;
+    padding: 0px;
+    width: 100%;
+}
+.tab_content {
+    display: none;
+    padding:10px;
+}
+
+
+.navbar-search{
+  width:26%;
+  float:right;
+  padding: 2px 10px;
+  margin-bottom: 0;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-border-radius: 15px;
+     -moz-border-radius: 15px;
+          border-radius: 15px;
+}
+
+#nav-search{
+  background-color:#ccc; 
+  height:30px; 
+  margin-top:-6px;
+}
+
+
+
+/*
+Carousel 
+*/
+
+
+
+.infiniteCarousel .wrapper {
+  width:775px; /* .infiniteCarousel width - (.wrapper margin-left + .wrapper margin-right) */
+  overflow: auto;
+  min-height: 332px;
+  margin: auto;
+  position: relative;
+ /* border:1px solid black; */
+}
+
+.infiniteCarousel ul a img {
+  border: 5px solid #000;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+}
+
+.infiniteCarousel .wrapper ul {
+  width: 9999px;
+  list-style-image:none;
+  list-style-position:outside;
+  list-style-type:none;
+  padding:0;
+  position: absolute;
+  top: 0;
+}
+
+.infiniteCarousel ul li {
+  display:block;
+  float:left;
+  padding: 10px;
+}
+
+.infiniteCarousel ul li a img {
+  display:block;
+}
+
+.infiniteCarousel .arrow {
+  display: block;
+  height: 36px;
+  width: 37px;
+  background: url(../img/arrow.png) no-repeat 0 0;
+  text-indent: -999px;
+  position: absolute;
+  top: 150px;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+.infiniteCarousel .forward {
+  background-position: 0 0;
+  right: 0;
+}
+
+.infiniteCarousel .back {
+  background-position: 0 -72px;
+  left: 0;
+}
+
+.infiniteCarousel .forward:hover {
+  background-position: 0 -36px;
+}
+
+.infiniteCarousel .back:hover {
+  background-position: 0 -108px;
+}
+
+
+
